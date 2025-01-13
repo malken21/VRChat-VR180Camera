@@ -225,58 +225,47 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1819060222249682926, guid: e06d0efbdb13d2e4fa944d7ac2448470,
-        type: 3}
+    - target: {fileID: 1819060222249682926, guid: e06d0efbdb13d2e4fa944d7ac2448470, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1819060222249682926, guid: e06d0efbdb13d2e4fa944d7ac2448470,
-        type: 3}
+    - target: {fileID: 1819060222249682926, guid: e06d0efbdb13d2e4fa944d7ac2448470, type: 3}
       propertyPath: m_LocalPosition.y
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 1819060222249682926, guid: e06d0efbdb13d2e4fa944d7ac2448470,
-        type: 3}
+    - target: {fileID: 1819060222249682926, guid: e06d0efbdb13d2e4fa944d7ac2448470, type: 3}
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1819060222249682926, guid: e06d0efbdb13d2e4fa944d7ac2448470,
-        type: 3}
+    - target: {fileID: 1819060222249682926, guid: e06d0efbdb13d2e4fa944d7ac2448470, type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 1819060222249682926, guid: e06d0efbdb13d2e4fa944d7ac2448470,
-        type: 3}
+    - target: {fileID: 1819060222249682926, guid: e06d0efbdb13d2e4fa944d7ac2448470, type: 3}
       propertyPath: m_LocalRotation.x
       value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: 1819060222249682926, guid: e06d0efbdb13d2e4fa944d7ac2448470,
-        type: 3}
+    - target: {fileID: 1819060222249682926, guid: e06d0efbdb13d2e4fa944d7ac2448470, type: 3}
       propertyPath: m_LocalRotation.y
       value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: 1819060222249682926, guid: e06d0efbdb13d2e4fa944d7ac2448470,
-        type: 3}
+    - target: {fileID: 1819060222249682926, guid: e06d0efbdb13d2e4fa944d7ac2448470, type: 3}
       propertyPath: m_LocalRotation.z
       value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: 1819060222249682926, guid: e06d0efbdb13d2e4fa944d7ac2448470,
-        type: 3}
+    - target: {fileID: 1819060222249682926, guid: e06d0efbdb13d2e4fa944d7ac2448470, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1819060222249682926, guid: e06d0efbdb13d2e4fa944d7ac2448470,
-        type: 3}
+    - target: {fileID: 1819060222249682926, guid: e06d0efbdb13d2e4fa944d7ac2448470, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1819060222249682926, guid: e06d0efbdb13d2e4fa944d7ac2448470,
-        type: 3}
+    - target: {fileID: 1819060222249682926, guid: e06d0efbdb13d2e4fa944d7ac2448470, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4010776288071862247, guid: e06d0efbdb13d2e4fa944d7ac2448470,
-        type: 3}
+    - target: {fileID: 4010776288071862247, guid: e06d0efbdb13d2e4fa944d7ac2448470, type: 3}
       propertyPath: m_Name
       value: VR180 Camera
       objectReference: {fileID: 0}
