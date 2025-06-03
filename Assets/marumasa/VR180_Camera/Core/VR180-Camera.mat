@@ -45,19 +45,19 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _LeftEyeDOWN:
-        m_Texture: {fileID: 8400000, guid: 06bb8d35c64056144aca2d74de7d7718, type: 2}
+        m_Texture: {fileID: 8600000, guid: 1b899bcd5fc77c348aecc4728f301b9b, type: 2}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _LeftEyeL:
-        m_Texture: {fileID: 8400000, guid: cffb75c011450ea44b7db3cce3ae0144, type: 2}
+        m_Texture: {fileID: 8600000, guid: f8b126165cf0a3a44a150d625a797323, type: 2}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _LeftEyeR:
-        m_Texture: {fileID: 8400000, guid: 6655fc6f40e6b0d4695dbfab498f1543, type: 2}
+        m_Texture: {fileID: 8600000, guid: ae28475e4f446c84097171ea47667061, type: 2}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _LeftEyeUP:
-        m_Texture: {fileID: 8400000, guid: 891716875c53bbb4ab2ed04c360a6006, type: 2}
+        m_Texture: {fileID: 8600000, guid: 5ecfe0fadc14b3548b8fcebba4e433ff, type: 2}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _LeftTex:
@@ -97,19 +97,19 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _RightEyeDOWN:
-        m_Texture: {fileID: 8400000, guid: 5cf7cdc5f38bd154dbb7a7bd1a7acfde, type: 2}
+        m_Texture: {fileID: 8600000, guid: af199b0a1e154964982c6ef5fc971747, type: 2}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _RightEyeL:
-        m_Texture: {fileID: 8400000, guid: 9247bded2c17a9141b78b320caa9dfef, type: 2}
+        m_Texture: {fileID: 8600000, guid: e00b501fe7551774f9e70390a8c60b50, type: 2}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _RightEyeR:
-        m_Texture: {fileID: 8400000, guid: 58b09c22434375a44bce22390c8452ac, type: 2}
+        m_Texture: {fileID: 8600000, guid: 6adb3c2cfb7f02c4b8eaf721b14775b6, type: 2}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _RightEyeUP:
-        m_Texture: {fileID: 8400000, guid: 0afd259467229cd479ac79ff774459f6, type: 2}
+        m_Texture: {fileID: 8600000, guid: e611a3f9d0856d74a9dc6d9bb759e7f0, type: 2}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _RightTex:
