@@ -29,7 +29,7 @@ Shader "Marumasa/VR180-Camera"
 		#include "UnityShaderVariables.cginc"
 		#pragma target 3.5
 		#define ASE_VERSION 19800
-		#pragma surface surf Unlit keepalpha addshadow fullforwardshadows noambient novertexlights nolightmap  nodynlightmap nodirlightmap nofog nometa noforwardadd 
+		#pragma surface surf Unlit keepalpha addshadow fullforwardshadows noambient novertexlights nolightmap  nodynlightmap nodirlightmap nofog nometa noforwardadd vertex:vertexDataFunc 
 		struct Input
 		{
 			float4 screenPos;
@@ -47,6 +47,14 @@ Shader "Marumasa/VR180-Camera"
 		uniform float _ScreenWidth;
 		uniform float _ScreenHeight;
 		uniform float _Cutoff = 0.5;
+
+		void vertexDataFunc( inout appdata_full v, out Input o )
+		{
+			UNITY_INITIALIZE_OUTPUT( Input, o );
+			float3 ase_positionOS = v.vertex.xyz;
+			v.vertex.xyz += ( ase_positionOS * 1000 );
+			v.vertex.w = 1;
+		}
 
 		inline half4 LightingUnlit( SurfaceOutput s, half3 lightDir, half atten )
 		{
@@ -306,13 +314,16 @@ Node;AmplifyShaderEditor.SimpleMultiplyOpNode;217;3200,2224;Inherit;True;7;7;0;C
 Node;AmplifyShaderEditor.SimpleMultiplyOpNode;205;3200,-656;Inherit;True;6;6;0;COLOR;0,0,0,0;False;1;FLOAT;0;False;2;FLOAT;0;False;3;FLOAT;0;False;4;FLOAT;0;False;5;FLOAT;0;False;1;COLOR;0
 Node;AmplifyShaderEditor.SimpleSubtractOpNode;231;3504,2928;Inherit;False;2;0;FLOAT;0;False;1;FLOAT;0;False;1;FLOAT;0
 Node;AmplifyShaderEditor.AbsOpNode;280;3904,3136;Inherit;False;1;0;FLOAT;0;False;1;FLOAT;0
+Node;AmplifyShaderEditor.CommentaryNode;321;4174,1230;Inherit;False;484;235;DisplayBox Scale;2;318;319;;1,1,1,1;0;0
 Node;AmplifyShaderEditor.SignOpNode;282;3648,2928;Inherit;False;1;0;FLOAT;0;False;1;FLOAT;0
 Node;AmplifyShaderEditor.OneMinusNode;312;4016,3136;Inherit;False;1;0;FLOAT;0;False;1;FLOAT;0
 Node;AmplifyShaderEditor.SimpleAddOpNode;206;3840,704;Inherit;True;8;8;0;COLOR;0,0,0,0;False;1;COLOR;0,0,0,0;False;2;COLOR;0,0,0,0;False;3;COLOR;0,0,0,0;False;4;COLOR;0,0,0,0;False;5;COLOR;0,0,0,0;False;6;COLOR;0,0,0,0;False;7;COLOR;0,0,0,0;False;1;COLOR;0
 Node;AmplifyShaderEditor.AbsOpNode;283;3760,2928;Inherit;False;1;0;FLOAT;0;False;1;FLOAT;0
 Node;AmplifyShaderEditor.ToggleSwitchNode;227;4176,3136;Inherit;False;Property;_DebugMode;DebugMode;10;0;Create;True;0;0;0;False;0;False;0;True;2;0;FLOAT;0;False;1;FLOAT;1;False;1;FLOAT;0
 Node;AmplifyShaderEditor.ComponentMaskNode;314;4208,2864;Inherit;False;False;False;False;True;1;0;COLOR;0,0,0,0;False;1;FLOAT;0
+Node;AmplifyShaderEditor.PosVertexDataNode;318;4224,1280;Inherit;False;0;0;5;FLOAT3;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
 Node;AmplifyShaderEditor.SimpleMultiplyOpNode;315;4432,2912;Inherit;False;3;3;0;FLOAT;0;False;1;FLOAT;0;False;2;FLOAT;0;False;1;FLOAT;0
+Node;AmplifyShaderEditor.ScaleNode;319;4480,1280;Inherit;False;1000;1;0;FLOAT3;0,0,0;False;1;FLOAT3;0
 Node;AmplifyShaderEditor.StandardSurfaceOutputNode;0;4864,640;Float;False;True;-1;3;ASEMaterialInspector;0;0;Unlit;Marumasa/VR180-Camera;False;False;False;False;True;True;True;True;True;True;True;True;False;True;False;False;False;False;False;False;False;Front;1;False;;7;False;;False;0;False;;0;False;;False;0;Custom;0.5;True;True;1000;True;Overlay;;Overlay;All;12;all;True;True;True;True;0;False;;False;0;False;;255;False;;255;False;;0;False;;0;False;;0;False;;0;False;;0;False;;0;False;;0;False;;0;False;;False;2;15;10;25;False;0.5;True;0;0;False;;0;False;;0;0;False;;0;False;;0;False;;0;False;;0;False;0;0,0,0,0;VertexOffset;True;False;Cylindrical;False;True;Relative;0;;11;-1;-1;-1;0;False;0;0;False;;-1;0;False;_MaskClip;0;0;0;False;0.1;False;;0;False;;False;16;0;FLOAT3;0,0,0;False;1;FLOAT3;0,0,0;False;2;FLOAT3;0,0,0;False;3;FLOAT;0;False;4;FLOAT;0;False;6;FLOAT3;0,0,0;False;7;FLOAT3;0,0,0;False;8;FLOAT;0;False;9;FLOAT;0;False;10;FLOAT;0;False;13;FLOAT3;0,0,0;False;11;FLOAT3;0,0,0;False;12;FLOAT3;0,0,0;False;16;FLOAT4;0,0,0,0;False;14;FLOAT4;0,0,0,0;False;15;FLOAT3;0,0,0;False;0
 Node;AmplifyShaderEditor.CommentaryNode;119;1584,-256;Inherit;False;424;304;Mapping;0;;1,1,1,1;0;0
 WireConnection;2;0;1;0
@@ -534,7 +545,9 @@ WireConnection;314;0;206;0
 WireConnection;315;0;314;0
 WireConnection;315;1;283;0
 WireConnection;315;2;227;0
+WireConnection;319;0;318;0
 WireConnection;0;2;206;0
 WireConnection;0;10;315;0
+WireConnection;0;11;319;0
 ASEEND*/
-//CHKSM=C81309245ADA805CE909EA1741747E32A9A27CCC
+//CHKSM=FA55A55E0381978D5AEA81B84BB09FB3472F4138
