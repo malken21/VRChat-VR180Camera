@@ -8,4 +8,4 @@ VRChatで VR180の映像を撮影できるカメラです。
 
 AmplifyShaderEditor を使用して シェーダーを作成しました。
 
-<img src=".github/assets/VR180-Camera-Shader.png" width="80%" />
+<img src="./ScreenshotASE.png" width="80%" />
