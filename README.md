@@ -5,7 +5,7 @@ unitypackageとして提供しており、シェーダーは Amplify Shader Edit
 <img src="./ScreenshotASE.png" width="80%" />
 
 ## 使い方
-このツールを利用するには、以下の3つのステップを設定してください。
+このツールを利用するには、以下の2つのステップを設定してください。
 
 ### 1. パッケージのセットアップ
 - 以下のリンクから UnityPackage をダウンロードします。<br>
